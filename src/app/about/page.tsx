@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import {
@@ -127,24 +128,39 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-bold text-foreground">Founder</h2>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              AI Astra was founded by a technologist passionate about making AI
-              accessible to organizations that create real community impact. With
-              experience building AI assistants, health platforms, and community
-              engagement tools, the focus has always been on practical solutions
-              that work for real users.
+              AI Astra was founded by{" "}
+              <strong className="font-semibold text-foreground">
+                Sree Krishna Sanka
+              </strong>
+              , a curious, ambitious, and community-driven technologist who
+              believes the best technology begins with understanding people. He
+              enjoys listening closely to users, breaking complex problems into
+              manageable steps, and turning early ideas into practical tools
+              that create measurable impact. His approach is shaped by empathy,
+              persistence, and a willingness to keep improving until a solution
+              feels both useful and intuitive.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              The approach combines modern engineering — React, Next.js, Google
-              Gemini, Firebase, and cloud infrastructure — with a deep
-              understanding of the constraints and needs of mission-driven
-              organizations.
+              Sree Krishna is naturally collaborative and brings energy,
+              patience, and creativity to every project. Whether he is working
+              with nonprofit leaders, patients, students, or technical teams, he
+              values clear communication and making others feel heard. He is
+              especially motivated by challenges that combine technology with
+              service, and he sees AI not as a replacement for human connection,
+              but as a way to help people and organizations do more with the
+              resources they already have.
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="relative h-64 w-64 rounded-3xl bg-gradient-to-br from-primary/20 to-accent-cyan/20 flex items-center justify-center">
-              <div className="h-32 w-32 rounded-full bg-gradient-to-br from-primary to-primary-blue flex items-center justify-center text-4xl font-bold text-white">
-                AA
-              </div>
+            <div className="relative h-80 w-64 overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-primary/10 to-accent-cyan/10 shadow-md">
+              <Image
+                src="/images/sree-krishna-sanka.png"
+                alt="Sree Krishna Sanka, Founder of AI Astra Innovations"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 256px, 320px"
+                priority
+              />
             </div>
           </div>
         </div>

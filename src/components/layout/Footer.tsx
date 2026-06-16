@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 
 const footerLinks = {
@@ -30,26 +30,6 @@ export function Footer() {
               AI Astra makes advanced technology practical and accessible for
               organizations working to create meaningful impact.
             </p>
-            <div className="mt-6 flex gap-3">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-white text-muted transition-colors hover:border-primary/30 hover:text-primary"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-white text-muted transition-colors hover:border-primary/30 hover:text-primary"
-                aria-label="GitHub"
-              >
-                <Github className="h-4 w-4" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -110,25 +90,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+        <div className="mt-12 border-t border-border pt-8">
           <p className="text-sm text-muted">
             © {new Date().getFullYear()} AI Astra Innovations. All rights
             reserved.
           </p>
-          <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="text-sm text-muted transition-colors hover:text-primary"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-sm text-muted transition-colors hover:text-primary"
-            >
-              Terms
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

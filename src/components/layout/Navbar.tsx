@@ -35,7 +35,7 @@ export function Navbar() {
       )}
     >
       <nav
-        className="container-max flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8"
+        className="container-max flex h-20 items-center justify-between gap-4 px-4 sm:h-[5.5rem] sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         <Logo />
@@ -72,7 +72,7 @@ export function Navbar() {
       {/* Mobile menu overlay */}
       <div
         className={cn(
-          "fixed inset-0 top-16 z-40 bg-black/20 backdrop-blur-sm transition-opacity lg:hidden",
+          "fixed inset-0 top-20 z-40 bg-black/20 backdrop-blur-sm transition-opacity sm:top-[5.5rem] lg:hidden",
           isOpen ? "opacity-100" : "pointer-events-none opacity-0"
         )}
         onClick={() => setIsOpen(false)}
@@ -82,7 +82,7 @@ export function Navbar() {
       {/* Mobile slide-out menu */}
       <div
         className={cn(
-          "fixed right-0 top-16 z-50 h-[calc(100vh-4rem)] w-72 border-l border-border bg-white shadow-xl transition-transform duration-300 ease-out lg:hidden",
+          "fixed right-0 top-20 z-50 h-[calc(100vh-5rem)] w-72 border-l border-border bg-white shadow-xl transition-transform duration-300 ease-out sm:top-[5.5rem] sm:h-[calc(100vh-5.5rem)] lg:hidden",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

@@ -4,7 +4,6 @@ import {
   StaggerItem,
 } from "@/components/ui/AnimatedSection";
 import {
-  SectionDescription,
   SectionHeading,
   SectionLabel,
 } from "@/components/ui/SectionHeader";
@@ -17,10 +16,7 @@ export function TestimonialsSection() {
       <div className="container-max">
         <div className="text-center">
           <SectionLabel>Testimonials</SectionLabel>
-          <SectionHeading className="mx-auto">What partners say</SectionHeading>
-          <SectionDescription className="mx-auto">
-            Placeholder testimonials — to be replaced with real client feedback.
-          </SectionDescription>
+          <SectionHeading className="mx-auto">What clients say</SectionHeading>
         </div>
 
         <StaggerContainer className="mt-12 grid gap-6 md:grid-cols-3">
