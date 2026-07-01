@@ -19,10 +19,10 @@ export default function TermsPage() {
         <p className="mt-4 text-muted leading-relaxed">
           For questions, contact us at{" "}
           <a
-            href="mailto:hello@aiastrainnovations.com"
+            href="mailto:join.aiastra@gmail.com"
             className="text-primary hover:underline"
           >
-            hello@aiastrainnovations.com
+            join.aiastra@gmail.com
           </a>
           .
         </p>

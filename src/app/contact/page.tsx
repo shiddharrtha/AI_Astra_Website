@@ -176,10 +176,10 @@ export default function ContactPage() {
               <p className="mt-2 text-sm text-muted">
                 Prefer email? Reach us at{" "}
                 <a
-                  href="mailto:hello@aiastrainnovations.com"
+                  href="mailto:join.aiastra@gmail.com"
                   className="text-primary hover:underline"
                 >
-                  hello@aiastrainnovations.com
+                  join.aiastra@gmail.com
                 </a>
               </p>
             </div>
