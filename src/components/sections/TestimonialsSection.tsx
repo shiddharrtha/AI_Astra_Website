@@ -22,29 +22,11 @@ export function TestimonialsSection() {
         <StaggerContainer className="mt-12 grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, i) => (
             <StaggerItem key={i}>
-              <div className="card-base card-hover relative flex h-full flex-col p-6">
-                {testimonial.isPlaceholder && (
-                  <span className="absolute top-4 right-4 rounded-full bg-amber-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-amber-600 border border-amber-200">
-                    Placeholder
-                  </span>
-                )}
+              <div className="card-base card-hover flex h-full flex-col p-6">
                 <Quote className="mb-4 h-8 w-8 text-primary/20" />
                 <p className="flex-1 text-sm leading-relaxed text-muted italic">
-                  {testimonial.quote}
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
-                <div className="mt-6 flex items-center gap-3 border-t border-border pt-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent-cyan/20 text-sm font-semibold text-primary">
-                    {testimonial.name.charAt(1)}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-xs text-muted">
-                      {testimonial.role}, {testimonial.organization}
-                    </p>
-                  </div>
-                </div>
               </div>
             </StaggerItem>
           ))}

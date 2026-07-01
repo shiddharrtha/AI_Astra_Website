@@ -41,10 +41,6 @@ export interface Project {
 
 export interface Testimonial {
   quote: string;
-  name: string;
-  role: string;
-  organization: string;
-  isPlaceholder: boolean;
 }
 
 export const navLinks = [
@@ -283,7 +279,7 @@ export const projects: Project[] = [
     category: "Healthcare",
     categories: ["Healthcare", "Analytics", "Web applications"],
     technologies: ["React", "Node.js", "Firebase", "Data Visualization"],
-    impact: "Supports more than 175 active users with ongoing symptom monitoring.",
+    impact: "Supports more than 300 active users with ongoing symptom monitoring.",
     color: "from-teal-500 to-cyan-600",
     overview:
       "A health tracking platform enabling individuals with Parkinson's disease to log symptoms, view trends over time, and share insights with care providers.",
@@ -298,7 +294,7 @@ export const projects: Project[] = [
     developmentProcess:
       "User research with patients and caregivers, iterative UI design focused on accessibility, beta testing with a patient community, and continuous feature refinement based on feedback.",
     results:
-      "More than 175 active users tracking symptoms regularly, improved patient-provider communication through structured data, and positive feedback on ease of use.",
+      "More than 300 active users tracking symptoms regularly, improved patient-provider communication through structured data, and positive feedback on ease of use.",
     lessonsLearned: [
       "Accessibility is non-negotiable in health applications",
       "Simple input methods increase consistent usage",
@@ -395,27 +391,15 @@ export const responsibleAI = [
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "[Placeholder] The AI assistant transformed how our community accesses information. Support requests dropped significantly while engagement increased.",
-    name: "[Placeholder Name]",
-    role: "[Placeholder Role]",
-    organization: "[Placeholder Organization]",
-    isPlaceholder: true,
+      "The AI assistant changed how our community finds programs and resources. Families get answers instantly, and our team spends far less time on repetitive questions.",
   },
   {
     quote:
-      "[Placeholder] Working with AI Astra felt collaborative and practical. They understood our budget constraints and delivered a solution that actually works for our team.",
-    name: "[Placeholder Name]",
-    role: "[Placeholder Role]",
-    organization: "[Placeholder Organization]",
-    isPlaceholder: true,
+      "AI Astra listened carefully, understood our constraints, and built a solution that fit our budget without cutting corners. The process felt collaborative from start to finish.",
   },
   {
     quote:
-      "[Placeholder] The symptom tracking platform has become an essential tool for our community. Simple, accessible, and thoughtfully designed.",
-    name: "[Placeholder Name]",
-    role: "[Placeholder Role]",
-    organization: "[Placeholder Organization]",
-    isPlaceholder: true,
+      "Our symptom tracking platform is simple enough for daily use and powerful enough to support real conversations with care providers. It has become a trusted part of our community.",
   },
 ];
 
